@@ -11,13 +11,13 @@
   <div class="container-fluid navbar-container">
     <%= link to: webapp_url(@conn), class: "navbar-brand", "data-test": "header_logo" do %>
       <img class="navbar-logo" id="navbar-logo" src="<%= logo() %>" alt="<%= subnetwork_title() %>" />
-    <% end %>   
+    <% end %>
     <script>
       if (localStorage.getItem("current-color-mode") === "dark") {
         document.getElementById("navbar-logo").style.filter = "brightness(0) invert(1)";
       }
     </script>
-    <div style="color:#828ba0"><%= gettext("FUNCOIN") %>&emsp;</div>
+    
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="<%= gettext("Toggle navigation") %>">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -81,7 +81,7 @@
               </span>
               <%= gettext("APIs") %>
             </a>
-            <div class="dropdown-menu" aria-labeledby="navbarTransactionsDropdown"> 
+            <div class="dropdown-menu" aria-labeledby="navbarTransactionsDropdown">
               <%= link(
                     gettext("GraphQL"),
                     class: "dropdown-item #{tab_status("graphiql", @conn.request_path)}",
@@ -160,4 +160,4 @@
     var modeChanger = document.getElementById("dark-mode-changer");
     modeChanger.className += " " + "dark-mode-changer--dark";
   }
-</script> 
+</script>
