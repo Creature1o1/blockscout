@@ -1,6 +1,10 @@
 <div class='dashboard-banner-container' data-page="chain-details">
   <div class="container">
-    
+    <div class="dashboard-banner">
+      <!-- Graph and legend -->
+      <div class="dashboard-banner-network-graph">
+
+      </div>
       <!-- Stats -->
       <div class="dashboard-banner-network-plain-container">
         <div class="dashboard-banner-network-stats">
